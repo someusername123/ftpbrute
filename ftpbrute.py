@@ -23,7 +23,7 @@ except ftplib.error_perm as eeeeeeeeee: #sorry about my variable names
 	#login failed
 
 #read files to memory to not kill the disk
-#try: #can never assume people will run stuff right.
+try: #can never assume people will run stuff right.
 	with open(sys.argv[2]) as zefile:
 		userlist = zefile.readlines()
 	zefile.close() #cleanup
